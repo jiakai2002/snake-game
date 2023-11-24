@@ -14,8 +14,8 @@ int tailX[width*height], tailY[width*height];
 int nTail = 0;
 
 void Setup() {
-    clear();
     initscr();
+    clear();
     noecho();
     cbreak();
     curs_set(0);
@@ -60,7 +60,7 @@ void Draw() {
 
 void Input() {
 	keypad(stdscr, TRUE);
-	halfdelay(3);
+	halfdelay(1);
 	int c = getch();
 	switch(c) {
 		case 'a':
